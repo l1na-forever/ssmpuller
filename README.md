@@ -5,6 +5,10 @@ Generates a systemd EnvironmentFile from [AWS Systems Manager parameters](https:
 
 ## Installation
 
+To install via [Cargo](https://doc.rust-lang.org/cargo/):
+
+    cargo install ssmpuller
+
 To install from source, first, [install Rust](https:://rustup.rs/), and then run:
 
     git clone github.com/l1na-forever/ssmpuller
