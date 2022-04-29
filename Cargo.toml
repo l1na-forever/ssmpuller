@@ -1,0 +1,24 @@
+[package]
+name = "ssmpuller"
+authors = ["Lina <61861965+l1na-forever@users.noreply.github.com>"]
+description = "Generates a systemd EnvironmentFile from AWS Systems Manager parameters."
+edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/l1na-forever/ssmpuller"
+version = "0.1.0"
+
+[dependencies]
+aws-config = "0.10"
+aws-sdk-ssm = "0.10"
+aws-types = "0.10"
+structopt = { version = "0.3", default-features = false }
+thiserror = "1"
+tokio = { version = "1", features = ["full"] }
+
+[dev-dependencies]
+tempfile = "3"
+
+[profile.release]
+lto = true # enable link-time optimizations, applied across the entire binary
+opt-level = "z"  # Optimize for size.
+strip = true  # Automatically strip symbols from the binary.
