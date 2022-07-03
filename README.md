@@ -13,7 +13,7 @@ To install from source, first, [install Rust](https:://rustup.rs/), and then run
 
     git clone github.com/l1na-forever/ssmpuller
     cd ssmpuller
-    cargo install
+    cargo install --path .
 
 **Binary releases can be found on the [Releases page](https://github.com/l1na-forever/ssmpuller/releases/).**
 
